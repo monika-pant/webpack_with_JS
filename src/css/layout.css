@@ -1,0 +1,21 @@
+@font-face { font-family: opensans; src: url('../fonts/OpenSans-Regular.ttf') format('opentype') }
+@font-face { font-family: opensansBold; src: url('../fonts/OpenSans-Semibold.ttf') format('opentype') }
+@font-face { font-family: opensansLight; src: url('../fonts/OpenSans-Light.ttf') format('opentype') }
+.sansB { font-family: opensansBold, arial; }
+.sansR { font-family: opensans, arial; }
+.sansL { font-family: opensansLight, arial; }
+html,body{
+    font-family: opensans, arial;
+    background-color:#000000;
+    color:#ffffff;
+}
+*{
+    box-sizing: border-box;
+}
+.left{
+    float:left;
+    margin:10px;
+}
+.clear{
+    clear:both;
+}
