@@ -1,0 +1,77 @@
+body{
+    font-family: Open sans-serif;
+    background-color: black;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+div.container2{
+    text-align: center;
+    color: white;
+    padding: 16px;
+}
+.pas{
+ background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
+.user{
+     background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
+/*h2{
+    width:89px;
+    height:49px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+h4{
+    text-align: center;
+    color:white;
+}*/
+
+label.username{
+    width: 86px;
+    height: 24px;
+    overflow-x: 754px;
+    overflow-y: 485px;
+    size: 18px;
+    align-content: left;
+    color: white;
+    float: left;
+
+}
+label.password{
+    width: 79px;
+    height: 24px;
+}
+button.subm{
+    border-radius: 24px;
+    width: 100px;
+    height: 42px;
+    border: 1px;
+    opacity: 100%;
+    
+    
+}
+

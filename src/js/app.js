@@ -1,6 +1,7 @@
 import * as domVar from './dom-loader';
 import {$} from 'jquery';
 import '../css/style.css';
+import '../css/login.css';
 // import icon from '../images/slot.png';  //should be used directly as we have muliple images
 import printMe from './print.js';
 

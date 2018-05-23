@@ -7,13 +7,24 @@ module.exports = {
   entry: {
     app: './src/js/app.js',
     print: './src/js/print.js',
+    login:'./src/js/login.js'
   }, 
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    
+  },
   devtool: 'inline-source-map',
   plugins: [
-         new CleanWebpackPlugin(['dist']),
-          new HtmlWebpackPlugin({
-            title: 'Output Management'
-          })
+        //  new CleanWebpackPlugin(['dist']),
+        //  new HtmlWebpackPlugin({
+        //   filename:'index.html',
+        //   template:'src/index.html'
+        // }),
+        new HtmlWebpackPlugin({
+          filename:'login.html',
+          template:'src/login.html',
+          chunks:['login']
+        })
         ],
   output: {
     
