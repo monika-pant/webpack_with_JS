@@ -1,7 +1,9 @@
 import * as domVar from './dom-loader';
-import {$} from 'jquery';
+import $ from 'jquery';
 import '../css/layout.css';
 import '../css/style.css';
+//dynamically importing html files
+import '../login.html'
 
 // import icon from '../images/slot.png';  //should be used directly as we have muliple images
 import printMe from './print.js';

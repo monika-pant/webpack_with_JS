@@ -36,34 +36,32 @@ module.exports = {
             },
             {
               test: /\.(woff|woff2|eot|ttf|otf)$/,
-              use: [
-                'file-loader'
-              ]             
+              use: [{
+                loader:'file-loader',
+                options:{
+                    name:'[name].[ext]'
+                }
+              }          
+              ],
+              exclude: path.resolve(__dirname,'/src/index.html')
           },
           {
-            test: /\.html$/,
+            test: /\.(html|htm)$/,
             use: [
-              {
-              loader:'file-loader',
-              options:{
-                name:'[name].[ext]'
-              }
-            }
-          ],
-            exclude:path.resolve(__dirname,'/src/index.html')
+              'file-loader'
+            ]
         }
          ]
      },
-     plugins: [ 
-            
+     plugins: [        
          new HtmlWebpackPlugin({
            //explicit file name, else it will work as SPA , trating other fle as a template
           filename:'index.html',
-          template:'src/index.html'
+          template:'src/index.html',
           /**if we dont specify then it will inject all the bundles into our HTML
           empty chunks array means no bundle to include
           **/
-          // chunks:['app','print']
+          chunks:['app','print']
         })
         ]
 };

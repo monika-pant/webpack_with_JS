@@ -1,31 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nokia WebGUI</title>
-</head>
-<body>
-    <div style="font-size:14px;">
-        Hello world, Welcome to webpack multiage aplication
-    </div>
-    <div class="left col-6">
-            <button class="btn-black" id="secretButton">show the secret</button>
-            
-                <h2 id="secretPaagraph" style="display:none;">Welcome to the magical world of JS</h2>
-    </div>
-    
-    <div class="left col-6 ">
-
-        <button class="btn-black" id="printButton">Print message on console</button>
-        
-    </div>
-    <div class="login-link clear"><a href="login.html">go to login</a></div>
-    
-<script type="text/javascript" src="app.bundle.js"></script><script type="text/javascript" src="print.bundle.js"></script></body>
-
-<!-- <script src="../dist/print.bundle.js"></script>
-<script src="../dist/app.bundle.js"></script> -->
-
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Conflict: Multiple assets emit to the same filename index.html:
+  Error: Conflict: Multiple assets emit to the same filename index.html
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [webpack_with_JS]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:242 compile
+    [webpack_with_JS]/[webpack]/lib/Compiler.js:242:11
+  
+  - Compiler.js:487 hooks.afterCompile.callAsync.err
+    [webpack_with_JS]/[webpack]/lib/Compiler.js:487:14
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [webpack_with_JS]/[tapable]/lib/Hook.js:35:21
+  
+  - Compiler.js:484 compilation.seal.err
+    [webpack_with_JS]/[webpack]/lib/Compiler.js:484:30
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [webpack_with_JS]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:966 hooks.optimizeAssets.callAsync.err
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:966:35
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [webpack_with_JS]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:957 hooks.optimizeChunkAssets.callAsync.err
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:957:32
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [webpack_with_JS]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:952 hooks.additionalAssets.callAsync.err
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:952:36
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [webpack_with_JS]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:948 hooks.optimizeTree.callAsync.err
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:948:32
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [webpack_with_JS]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:890 Compilation.seal
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:890:27
+  
+  - Compiler.js:481 hooks.make.callAsync.err
+    [webpack_with_JS]/[webpack]/lib/Compiler.js:481:17
+  
+  
+  - Compilation.js:758 _addModuleChain
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:758:12
+  
+  - Compilation.js:697 processModuleDependencies.err
+    [webpack_with_JS]/[webpack]/lib/Compilation.js:697:9
+  
+  - next_tick.js:131 _combinedTickCallback
+    internal/process/next_tick.js:131:7
+  
+  - next_tick.js:180 process._tickCallback
+    internal/process/next_tick.js:180:9
+  
+</pre><script type="text/javascript" src="app.bundle.js"></script><script type="text/javascript" src="print.bundle.js"></script><script type="text/javascript" src="login.bundle.js"></script>
