@@ -18,7 +18,8 @@ module.exports = {
         //  new CleanWebpackPlugin(['dist']),
          new HtmlWebpackPlugin({
           filename:'index.html',
-          template:'src/index.html'
+          template:'src/index.html',
+          chunks:['app','print']
         }),
         new HtmlWebpackPlugin({
           filename:'login.html',

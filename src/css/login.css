@@ -1,6 +1,13 @@
-body{
-    font-family: Open sans-serif;
+*{
+    box-sizing: border-box;
+}
+html,body{
     background-color: black;
+}
+
+.container{
+    font-family: Open sans-serif;
+    
     height: 200px;
     width: 400px;
     position: absolute;

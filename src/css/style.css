@@ -1,19 +1,29 @@
 .btn-black{
+
+
+    
     color: #ffffff;
     background-color: #333333;
     border: 1px solid #333333;
-    padding: 5px 10px;
+    padding: 10px 14px 10px 30px;
     border-radius: 4px;
     outline: none;
     cursor:pointer;
     background-image:  url('../images/slot.png');
     background-repeat: no-repeat;
+    background-position: 10px;
 }
 .btn-black:hover{
     /* opacity: 0.8; */
-    background: #000000;
+    background-color: #000000;
+}
+.col-6{
+    width:40%;
 }
 .left{
     float:left;
     margin:10px;
+}
+html,body{
+    color:#ffffff;
 }
