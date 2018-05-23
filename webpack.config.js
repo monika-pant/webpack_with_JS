@@ -16,10 +16,10 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
         //  new CleanWebpackPlugin(['dist']),
-        //  new HtmlWebpackPlugin({
-        //   filename:'index.html',
-        //   template:'src/index.html'
-        // }),
+         new HtmlWebpackPlugin({
+          filename:'index.html',
+          template:'src/index.html'
+        }),
         new HtmlWebpackPlugin({
           filename:'login.html',
           template:'src/login.html',
