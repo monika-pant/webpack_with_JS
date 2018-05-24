@@ -46,24 +46,25 @@ module.exports = {
               {
               loader:'file-loader',
               options:{
-                name:'[name].[ext]'
+                name:'[name].[ext]',
+                chunks:['name']
               }
             }
           ],
-            exclude:path.resolve(__dirname,'/src/index.html')
+            exclude:path.resolve(__dirname,'src/index.html')
         }
          ]
      },
      plugins: [ 
-            
+        new CleanWebpackPlugin(['dist']),   
          new HtmlWebpackPlugin({
            //explicit file name, else it will work as SPA , trating other fle as a template
           filename:'index.html',
-          template:'src/index.html'
+          template:'src/index.html',
           /**if we dont specify then it will inject all the bundles into our HTML
           empty chunks array means no bundle to include
           **/
-          // chunks:['app','print']
+          chunks:['app','print']
         })
         ]
 };
